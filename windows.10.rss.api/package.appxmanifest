@@ -17,7 +17,7 @@
     <Application Id="App" StartPage="default.html">
       <uap:VisualElements DisplayName="rss.api" Description="SoftLabPro JavaScript Universal Feed Reader" BackgroundColor="transparent" Square150x150Logo="images\slp150x150.png" Square44x44Logo="images\slp44x44.png">
         <uap:LockScreen Notification="badgeAndTileText" BadgeLogo="images\slp24x24.png" />
-        <uap:SplashScreen Image="images\slp620x300.png" BackgroundColor="#87794E" />
+        <uap:SplashScreen Image="images\slp620x300.png" BackgroundColor="#647687" />
         <uap:DefaultTile ShortName="rss.api" Wide310x150Logo="images\slp310x150.png" Square310x310Logo="images\slp310x310.png" Square71x71Logo="images\slp71x71.png">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />
