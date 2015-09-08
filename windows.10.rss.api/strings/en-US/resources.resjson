@@ -1,0 +1,18 @@
+﻿// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836
+
+{
+    "title"                 : "rss.api",
+    "description"           : "slp.rss.api",
+    "readfullarticle"       : " Read full article ...",
+
+    "hubInformation"        : "Information",
+    "hubInformationHTML"    : "This is RSS Feed Reader application for Windows platform. It uses carefully selected RSS channels from variety sources in Internet World sites. It has clean and fast user interface developed with Metro design guidelines. It support Share option to popular social services and transparent Live Tile with latest RSS headlines. Application is also available on other Windows and Android platforms.",
+    "hubVersion"            : "Version",
+    "hubVersionHTML"        : "For any possible application bug or lack of feature, please be free to write about it in your review. Bug fixes and additional features will be released in next version update.",
+    "hubStatus"             : "Status",
+    "hubStatusHTML"         : "This is optimization release version with Universal development and upcoming Windows versions guideline implementations.",
+    "hubPrivacy"            : "Privacy",
+    "hubPrivacyHTML"        : "This application does not collect or transmit any user’s personal information, with the exception of technical information included in HTTP requests (such as your IP address). No personal information is used, stored, secured or disclosed by services this application works with. If you would like to report any violations of this policy, please contact our support.",
+    "hubContact"            : "Contact",
+    "hubContactHTML"        : "You can contact SoftLabPro via:"
+}

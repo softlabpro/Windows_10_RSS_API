@@ -1,0 +1,137 @@
+﻿/*
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Copyright (c) Microsoft Corporation. All rights reserved
+*/
+
+/* General styling */
+#contact {
+    background-color: rgb(255,255,255);
+    color: rgb(33,33,33);
+}
+
+#contact abbr, acronym, address, blockquote, cite, dl, dt, li, ol, p, q, strong, td {
+    font-family: "Calibri";
+}
+
+#contact a {
+    color: rgb(0, 112, 159);
+    text-decoration: none;
+}
+
+#contact a:visited {
+    color: rgb(3, 105, 122);
+}
+
+#contact a:hover, a:active {
+    color: rgb(51, 144, 177);
+    cursor: pointer;
+}
+
+#contact a:hover:active {
+    color: rgb(255,255,255);
+    background-color: rgb(33, 33, 33);
+}
+
+#contact a:disabled {
+    color: rgb(112, 112, 112);
+}
+
+#contact p {
+    margin: 11pt 0px;
+}
+
+#contact blockquote {
+    color: #888;
+    margin: 0px 11pt 0px 11pt;
+}
+
+#contact video {
+    border: 0px;
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+}
+
+#contact img {
+    max-width: 480px;
+    width: auto;
+    height: auto;
+}
+
+#contact .win-backbutton {
+    border-color: rgb(33,33,33);
+    color: rgb(33,33,33);
+}
+
+#contact .win-backbutton:hover {
+    background-color: lightgrey;
+}
+
+
+#webview{
+  width:100%;
+  height:100%;
+}
+
+button{
+   margin-right:15px;
+}
+
+/* contact Area */
+
+#contactArea {
+    -ms-grid-row: 2;
+    display: block;
+    height: 100%;
+    overflow-x: auto;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+    #contactArea contact {
+        /* Define a multi-column, horizontally scrolling contact by default. */
+        column-gap: 80px;
+        column-width: 480px;
+        height: calc(100% - 50px);
+        margin-left: 120px;
+        margin-top: 5px;
+        width: 480px;
+    }
+            
+        #contactArea contact #content p {
+            margin-bottom: 20px;
+            margin-right: 20px;
+            vertical-align: baseline;
+        }
+        
+        #contactArea contact #content .full-contact-link {
+            margin-top: 5px;
+        }
+
+@media screen and (max-width: 480px) {
+    #contact #contactArea {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+        #contact #contactArea img,
+        #contact #contactArea video {
+            max-width: 100%;
+        }
+
+    #contact contact {
+        margin-left: 10px;
+        width: calc(100% - 40px);
+        height: auto;
+    }
+
+        #contact contact #content {
+            padding-bottom: 50px;
+        }
+}

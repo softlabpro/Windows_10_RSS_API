@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>About</title>
+
+    <!-- WinJS references -->
+    <link href="/WinJS/css/ui-dark.css" rel="stylesheet">
+    <script src="/WinJS/js/base.js"></script>
+    <script src="/WinJS/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet">
+    <link href="/pages/about/about.css" rel="stylesheet">
+    <script src="/pages/about/about.js"></script>
+</head>
+
+<body class="win-type-body">
+    <!-- The content that will be loaded and displayed. -->
+    <div id="about" class="fragment">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton win-button" aria-label="Back" disabled></button>
+            <h1 class="titlearea win-type-ellipsis win-type-header">
+                <span class="pagetitle">About</span>
+            </h1>
+        </header>
+        <div id="aboutArea" aria-label="Main content" role="main">
+            <about>
+                <div class="hub" data-win-control="WinJS.UI.Pivot">
+                    <div class="hubInformation section" data-win-control="WinJS.UI.PivotItem" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'hubInformation'} }">
+                        <span data-win-res="{ textContent: 'hubInformationHTML' }"></span>
+                    </div>
+
+                    <div class="hubVersion section" data-win-control="WinJS.UI.PivotItem" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'hubVersion'} }">
+                        <span data-win-res="{ textContent: 'hubVersionHTML' }"></span>
+                    </div>
+
+                    <div class="hubStatus section" data-win-control="WinJS.UI.PivotItem" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'hubStatus'} }">
+                        <span data-win-res="{ textContent: 'hubStatusHTML' }"></span>
+                    </div>
+
+                    <div class="hubPrivacy section" data-win-control="WinJS.UI.PivotItem" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'hubPrivacy'} }">
+                        <span data-win-res="{ textContent: 'hubPrivacyHTML' }"></span>
+                    </div>
+
+                    <div class="hubContact section" data-win-control="WinJS.UI.PivotItem" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'hubContact'} }">
+                        <span data-win-res="{ textContent: 'hubContactHTML' }"></span>
+                          <span>
+                              <br><br>
+                              
+                              <a href="http://twitter.com/softlabpro">
+                                  <img alt="twitter"
+                                       src="ms-appx:///images/slp_twitter.png"
+                                       width="50" height="50" border="0">
+                              </a>
+                              <a href="http://www.facebook.com/pages/Softlabpro/756990050984362">
+                                  <img alt="facebook"
+                                       src="ms-appx:///images/slp_facebook.png"
+                                       width="50" height="50" border="0">
+                              </a>
+                              <a href="http://www.google.com/+SoftlabproBlogspotcom">
+                                  <img alt="google+"
+                                       src="ms-appx:///images/slp_google.png"
+                                       width="50" height="50" border="0">
+                              </a>
+                              <a href="http://rs.linkedin.com/in/softlabpro">
+                                  <img alt="linkedin"
+                                       src="ms-appx:///images/slp_linkedin.png"
+                                       width="50" height="50" border="0">
+                              </a>
+                              <a href="http://softlabpro.blogspot.com">
+                                  <img alt="blogspot"
+                                       src="ms-appx:///images/slp_blogspot.png"
+                                       width="50" height="50" border="0">
+                              </a>
+                              <!--<a href="http://www.reddit.com/user/brudjuz">
+                                  <img alt="readit"
+                                       src="ms-appx:///images/slp_reddit.png"
+                                       width="50" height="50" border="0">
+                              </a>
+                              <a href="http://github.com/softlabpro">
+                                  <img alt="github"
+                                       src="ms-appx:///images/slp_github.png"
+                                       width="50" height="50" border="0">
+                              </a>-->
+                         </span>
+                    </div>
+                </div>
+            </about>
+        </div>
+    </div>
+
+</body>
+
+</html>

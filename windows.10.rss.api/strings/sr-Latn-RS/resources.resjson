@@ -1,0 +1,19 @@
+﻿// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836
+
+{
+    "title"                 : "rss.api",
+    "description"           : "slp.rss.api",
+    "readfullarticle"       : " Pročitaj ceo članak ...",
+
+    "hubInformation"        : "Informacija",
+    "hubInformationHTML"    : "Ova aplikacija je RSS čitač za Windows platformu. Ona koristi pažljivo birane RSS kanale sa raznih Internet izvora. Aplikacija ima jasan i brz korisnički izgled sa Metro dizajn principima. Podržava deljenje informacija (Share) na email i ostale popularne servise. Poseduje transparentnu živu pločicu (Live Tile) na radnoj površini sa najnovijim RSS vestima. Aplikacija je raspoloživa i za ostale Windows i Android platforme.",
+    "hubVersion"            : "Verzija",
+    "hubVersionHTML"        : "Za moguću grešku u programu ili nedostatak opcije, molimo Vas da budete strpljivi i napišete komentar o tome u Vašem pregledu. Ispravke grešaka i dodatne opcije su izvesne u narednoj verziji aplikacije.",
+    "hubStatus"             : "Status",
+    "hubStatusHTML"         : "Ovo je optimizovana verzija sa implementacijama Universal Metro programerskih principa.",
+    "hubPrivacy"            : "Privatnost",
+    "hubPrivacyHTML"        : "Ovaj program ne prikuplja ili prenosi lične podatke korisnika, s izuzetkom tehničke informacije koje su uključene u HTTP zahtev (kao što su IP adrese). Nikakvi lični podaci se ne koriste, arhiviraju, prenose ili objavljuju kroz usluge ovog programa. Ako želite prijaviti kršenje ove politike, kontaktirajte nas.",
+    "hubContact"            : "Kontakt",
+    "hubContactHTML"        : "Možete kontaktirati SoftLabPro preko:"
+
+}

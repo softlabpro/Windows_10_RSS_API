@@ -1,0 +1,93 @@
+﻿<!-- 
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Copyright (c) Microsoft Corporation. All rights reserved
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>data-win-res="{textContent: 'title'}"</title>
+
+    <!-- WinJS references -->
+    <link href="/WinJS/css/ui-dark.css" rel="stylesheet">
+    <script src="/WinJS/js/base.js"></script>
+    <script src="/WinJS/js/ui.js"></script>
+
+    <!-- Feed Reader references -->
+    <link href="/css/default.css" rel="stylesheet">
+    <script src="/js/MobileServices.js"></script>
+    <script src="/services/mobileServices/settings/softlabpro.js"></script>
+    <script src="/services/mobileservices/scripts/softlabpro.push.register.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/data.js"></script>
+    <script src="/js/render.js"></script>
+    <script src="/js/io.js"></script>
+    <script src="/js/navigator.js"></script>
+    <script src="/js/tiles.js"></script>
+
+</head>
+
+<body class="win-type-body">
+    <div id="app">
+        <div class="splitView" data-win-control="WinJS.UI.SplitView">
+            <!-- Pane area -->
+            <div>
+                <div class="header">
+                    <button class="win-splitviewpanetoggle"
+                            data-win-control="WinJS.UI.SplitViewPaneToggle"
+                            data-win-options="{ splitView: select('.splitView') }"></button>
+                    <div id="version" class="title">Menu</div>
+                </div>
+                <div class="nav-commands">
+                    <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{
+                    label: 'Home',
+                    icon: 'home',
+                    location: '/pages/news/news.html',
+                    tooltip:'Home'}"></div>
+                    <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{
+                    label: 'Refresh',
+                    icon: 'refresh',
+                    location: '/pages/news/news.html',
+                    tooltip: 'Refresh feeds'}"></div>
+                    <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{
+                    label: 'Settings',
+                    icon: 'settings',
+                    location: '/pages/settings/settings.html',
+                    tooltip: 'Manage feeds'}"></div>
+                    <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{
+                    label: 'Information',
+                    icon: 'accounts',
+                    location: '/pages/about/about.html',
+                    tooltip: 'SoftLabPro'}"></div>
+                    <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{
+                    label: 'SoftLabPro',
+                    icon: 'world',
+                    location: '/pages/contact/contact.html',
+                    tooltip: 'Contact Us'}"></div>
+                </div>
+            </div>
+
+            <!-- Content area -->
+            <!--<div class="contenttext"><h2 class="win-h2">SplitView Content area</h2> </div>-->
+            <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/news/news.html'}"></div>
+           
+         </div>
+
+    </div>
+    <!--<div id="appbar" data-win-control="WinJS.UI.AppBar">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{
+    id: 'refreshContentCmd',
+    label: 'Refresh',
+    icon: 'refresh',
+    section: 'global',
+    tooltip: 'Refresh content'}" class="win-button"></button>
+    </div>-->
+</body>
+
+</html>

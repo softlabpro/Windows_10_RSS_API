@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="10627softlabpro.RSSAPI" Version="1.1.0.0" Publisher="CN=9AA670C4-81C9-40E2-B77E-C55F38B07B91" />
+  <mp:PhoneIdentity PhoneProductId="c2adb9af-edb3-4e57-8056-9d0531d4a6b2" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>RSS API</DisplayName>
+    <PublisherDisplayName>softlabpro</PublisherDisplayName>
+    <Logo>images\slp50x50.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <uap:VisualElements DisplayName="rss.api" Description="SoftLabPro JavaScript Universal Feed Reader" BackgroundColor="transparent" Square150x150Logo="images\slp150x150.png" Square44x44Logo="images\slp44x44.png">
+        <uap:LockScreen Notification="badgeAndTileText" BadgeLogo="images\slp24x24.png" />
+        <uap:SplashScreen Image="images\slp620x300.png" BackgroundColor="#87794E" />
+        <uap:DefaultTile ShortName="rss.api" Wide310x150Logo="images\slp310x150.png" Square310x310Logo="images\slp310x310.png" Square71x71Logo="images\slp71x71.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+      </uap:VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" StartPage="js\background.js">
+          <BackgroundTasks>
+            <Task Type="pushNotification" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="privateNetworkClientServer" />
+    <Capability Name="internetClientServer" />
+  </Capabilities>
+</Package>

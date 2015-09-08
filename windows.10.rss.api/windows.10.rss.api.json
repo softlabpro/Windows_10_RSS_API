@@ -1,0 +1,37 @@
+[
+    {
+        "Category":"RSS",
+        "Name":"RSS #1",
+        "Description":"RSS Channel 1",
+        "uri":"http://feeds.feedburner.com/softlabpro/rss/1",
+        "imgUri":"ms-appx:///images/slp50x50.png"
+    },
+    {
+        "Category":"RSS",
+        "Name":"RSS #2",
+        "Description":"RSS Channel 2",
+        "uri":"http://feeds.feedburner.com/softlabpro/rss/2",
+        "imgUri":"ms-appx:///images/slp50x50.png"
+    },
+    {
+        "Category":"RSS",
+        "Name":"RSS #3",
+        "Description":"RSS Channel 3",
+        "uri":"http://feeds.feedburner.com/softlabpro/rss/3",
+        "imgUri":"ms-appx:///images/slp50x50.png"
+    },
+    {
+        "Category":"RSS",
+        "Name":"RSS #4",
+        "Description":"RSS Channel 4",
+        "uri":"http://feeds.feedburner.com/softlabpro/rss/4",
+        "imgUri":"ms-appx:///images/slp50x50.png"
+    },
+    {
+        "Category":"RSS",
+        "Name":"RSS #5",
+        "Description":"RSS Channel 5",
+        "uri":"http://feeds.feedburner.com/softlabpro/rss/5",
+        "imgUri":"ms-appx:///images/slp50x50.png"
+    }    
+]

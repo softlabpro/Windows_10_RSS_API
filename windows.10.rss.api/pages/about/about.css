@@ -1,0 +1,133 @@
+﻿/*
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Copyright (c) Microsoft Corporation. All rights reserved
+*/
+
+/* General styling */
+#about {
+    background: #3d3d3d url('../../../images/slp_background.png') bottom left no-repeat !important;
+    background-size: cover;
+}
+
+/* This selector is used to prevent ui-dark/light.css from overwriting changes
+   to .win-surface. */
+#about #aboutArea .win-horizontal.win-viewport .win-surface,
+#about #aboutArea .win-horizontal.win-viewport .win-surface {
+    margin-left: 45px;
+}
+
+#about abbr, acronym, address, blockquote, cite, dl, dt, li, ol, p, q, strong, td {
+    font-family: "Calibri";
+}
+
+#about a {
+    color: rgb(0, 255, 255);
+    text-decoration: none;
+}
+
+#about a:visited {
+    color: rgb(128, 128, 128);
+}
+
+#about a:hover, a:active {
+    color: rgb(51, 144, 177);
+    cursor: pointer;
+}
+
+#about a:hover:active {
+    color: rgb(255,255,255);
+    background-color: rgb(33, 33, 33);
+}
+
+#about a:disabled {
+    color: rgb(112, 112, 112);
+}
+
+#about p {
+    margin: 11pt 0px;
+}
+
+#about blockquote {
+    color: #888;
+    margin: 0px 11pt 0px 11pt;
+}
+
+#about video {
+    border: 0px;
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+}
+
+#about img {
+    max-width: 480px;
+    width: auto;
+    height: auto;
+}
+
+button{
+   margin-right:15px;
+}
+
+/* about Area */
+
+#aboutArea {
+    -ms-grid-row: 2;
+    display: block;
+    height: 100%;
+    overflow-x: auto;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+    #aboutArea about {
+        /* Define a multi-column, horizontally scrolling about by default. */
+        column-gap: 80px;
+        column-width: 480px;
+        height: calc(100% - 50px);
+        margin-left: 120px;
+        margin-top: 5px;
+        width: 480px;
+    }
+            
+        #aboutArea about #content p {
+            margin-bottom: 20px;
+            margin-right: 20px;
+            vertical-align: baseline;
+        }
+        
+        #aboutArea about #content .full-about-link {
+            margin-top: 5px;
+        }
+
+        #aboutArea about #content .win-hub-viewport {
+            -ms-scroll-snap-type: mandatory;
+}
+
+@media screen and (max-width: 480px) {
+    #about #aboutArea {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+        #about #aboutArea img,
+        #about #aboutArea video {
+            max-width: 100%;
+        }
+
+    #about about {
+        margin-left: 10px;
+        width: calc(100% - 40px);
+        height: auto;
+    }
+
+        #about about #content {
+            padding-bottom: 50px;
+        }
+}

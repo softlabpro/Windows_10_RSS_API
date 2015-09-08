@@ -1,0 +1,40 @@
+﻿Package SID:   
+ms-app://s-1-15-2-145965336-3983428384-1186351406-486271476-147806426-3305352574-370986507 
+
+Application identity:   
+<Identity Name="10627softlabpro.Svetvesti" Publisher="CN=9AA670C4-81C9-40E2-B77E-C55F38B07B91" /> 
+
+Client ID: 
+000000004011BD4B
+
+Client secret:   
+ls6dUfvJOmQgrazn4KWO82hhWtgiM1Yg
+
+Database:
+softlabpro_db
+User:
+slpadmin
+Password:
+SlpAdm2015
+
+When you edit a JavaScript file, IntelliSense will not work.
+When you debug a JavaScript-based Universal Windows application, you receive the following error message:
+The debugger cannot continue running the process.  Unable to start debugging.
+
+Workaround:
+Make sure your computer has an internet connection, and
+If the Tools for Universal Windows Apps Development are still installed:
+Go to Programs and Features, select Visual Studio 2015, click Change.
+In Visual Studio setup, click Modify.
+Deselect the feature Tools for Universal Windows App Development.
+Select Tools for Universal Windows App Development again, and click Update.
+If you have already uninstalled the Tools for Universal Windows Apps Development:
+Reinstall Tools for Universal Windows App Development.
+Or, take the following steps to reinstall the JavaScript project system and language service:
+Download the installer for your edition of Visual Studio, such as, vs_community.exe.
+Open a command window, and run the following command: 
+vs_community.exe /modify /installselectableitems JavaScript_Hidden /passive
+Change directories to C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE.
+Run the following commands
+devenv /updateconfiguration
+devenv /clearcache
